@@ -1,36 +1,33 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-
-const includeTest = (test) => {
-  if (!test) {
+const generateTest = (testText) => {
+  if (!testText) {
     return "";
   }
-  return ` This application include following test.
-    ${test}`;
+  return `
+  This project include following test.
+    ${testText}`;
 };
+// function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
   if (license !== "none") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `(https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return "";
 };
-
+//function that returns the license link
+// If there is no license, return an empty string
 const renderLicenseLink = (license) => {
   if (license !== "none") {
-    return `\n* [License](#license)\n`;
+    return `\n*(#license)\n`;
   }
   return "";
 };
+//function that returns the license section of README
+// If there is no license, return an empty string
 
 const renderLicenseSection = (license) => {
   if (license !== "None") {
-    return `*License*\n The project is licensed by ${license}.`;
+    return `\n The project is licensed by ${license}.`;
   }
   return "";
 };
@@ -61,19 +58,20 @@ module.exports = (readmeData) => {
     ${readmeData.usage}
 
 ## License
-    ${renderLicenseLink.license}
-    ${renderLicenseSection.license}
-    ${renderLicenseBadge}
+    ${renderLicenseSection(readmeData.license)}
+    ${renderLicenseBadge(readmeData.license)} 
+    ${renderLicenseLink(readmeData.license)}
 
 ## Contributing
-
     ${readmeData.contributing}
+
 ## Tests
-    ${includeTest.test}
+    ${generateTest(readmeData.test)}
+
 ## Questions
     please don't hesitate to reach out to us if you have any questions.
         ${readmeData.name}
-        ${"GitHub:" + " https://github.com/" + readmeData.github}
-        ${"Email:" + " " + readmeData.email}
+        ${"GitHub: " + "https://github.com/" + readmeData.github}
+        ${"Email: " + readmeData.email}
     `;
 };
