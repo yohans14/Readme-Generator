@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-
+const writeFile = require("./utils/generateMarkdown");
+const pageTemplate = require("./src/page-template");
 // TODO: Create an array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
@@ -43,19 +44,9 @@ const promptUser = () => {
         }
       },
     },
-  ]);
-};
-const promptProject = (readmeData) => {
-  console.log(`
-    =================
-      Add a README 
-    =================
-    `);
-
-  return inquirer.prompt([
     {
       type: "input",
-      name: "name",
+      name: "title",
       message: "What is the name of your project? (Required)",
       validate: (nameInput) => {
         if (nameInput) {
@@ -136,10 +127,25 @@ const promptProject = (readmeData) => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
+promptUser()
+  // .then(promptProject)
+  .then((readmeData) => {
+    return pageTemplate(readmeData);
+  })
+  .then((pageREADME) => {
+    return writeFile(pageREADME);
+  })
+  .then((writeFileResponse) => {
+    console.log(writeFileResponse);
+    return;
+  })
+  .catch((err) => {
+    console.log(err);
+  });
