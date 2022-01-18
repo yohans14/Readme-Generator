@@ -121,7 +121,13 @@ const promptUser = () => {
       type: "confirm",
       name: "confirmAddTests",
       message: "Does your application include Tests?",
-      default: false,
+      when: ({ confirmAddTests }) => {
+        if (confirmAddTests) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
   ]);
 };
