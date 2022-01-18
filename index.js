@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//Include packages needed for this application
 const inquirer = require("inquirer");
 const writeFile = require("./utils/generateMarkdown");
 const pageTemplate = require("./src/page-template");
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -138,14 +138,13 @@ const promptUser = () => {
   ]);
 };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+//Create a function to write README file
 
-// TODO: Create a function to initialize app
-// function init() {}
+//Create a function to initialize app
+//unction init() {}
 
-// Function call to initialize app
-// init();
+//call to initialize app
+//init();
 promptUser()
   // .then(promptProject)
   .then((readmeData) => {

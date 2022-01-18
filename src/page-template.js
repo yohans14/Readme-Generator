@@ -10,7 +10,7 @@ const generateTest = (testText) => {
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
   if (license !== "none") {
-    return `(https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`;
   }
   return "";
 };
@@ -18,7 +18,7 @@ const renderLicenseBadge = (license) => {
 // If there is no license, return an empty string
 const renderLicenseLink = (license) => {
   if (license !== "none") {
-    return `\n*(#license)\n`;
+    return `[More Info](https://choosealicense.com/licenses/)`;
   }
   return "";
 };
@@ -27,7 +27,7 @@ const renderLicenseLink = (license) => {
 
 const renderLicenseSection = (license) => {
   if (license !== "None") {
-    return `\n The project is licensed by ${license}.`;
+    return `\n  The project is licensed under ${license}.`;
   }
   return "";
 };
@@ -37,7 +37,7 @@ module.exports = (readmeData) => {
   const { projects, ...userinfo } = readmeData;
 
   return `
-    #${readmeData.title}
+# ${readmeData.title}
 
 ## Description 
     ${readmeData.description}
@@ -51,7 +51,7 @@ module.exports = (readmeData) => {
 * [Questions](#questions)
 
 ## Installation
-    Instructions to be followed 
+    Instructions for Installation:
     ${readmeData.installation}
 
 ## Usage 
@@ -59,7 +59,9 @@ module.exports = (readmeData) => {
 
 ## License
     ${renderLicenseSection(readmeData.license)}
+
     ${renderLicenseBadge(readmeData.license)} 
+
     ${renderLicenseLink(readmeData.license)}
 
 ## Contributing
@@ -69,9 +71,9 @@ module.exports = (readmeData) => {
     ${generateTest(readmeData.test)}
 
 ## Questions
-    please don't hesitate to reach out to us if you have any questions.
-        ${readmeData.name}
-        ${"GitHub: " + "https://github.com/" + readmeData.github}
-        ${"Email: " + readmeData.email}
+    Please don't hesitate to reach out to us if you have any questions.
+      ${readmeData.name}
+      ${"[GitHub]"("https://github.com/" + readmeData.github)}
+      ${"[Email]" + readmeData.email}
     `;
 };

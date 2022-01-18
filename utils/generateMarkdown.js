@@ -1,7 +1,6 @@
 const fs = require("fs");
 
-// TODO: Create a function to generate markdown for README
-
+//Create a function to generate markdown for README
 const writeFile = (readmeContent) => {
   return new Promise((resolve, reject) => {
     fs.writeFile("./dist/README.md", readmeContent, (err) => {
