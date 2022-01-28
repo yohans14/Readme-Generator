@@ -45,6 +45,7 @@ module.exports = (readmeData) => {
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Snapshot](#snapshot)
 * [License](#license)
 * [Tests](#tests)
 * [License](#license)
@@ -57,6 +58,8 @@ module.exports = (readmeData) => {
 ## Usage 
     ${readmeData.usage}
 
+## Snapshot
+  ![alt text](assets/images/screenshot.png)
 ## License
     ${renderLicenseSection(readmeData.license)}
 
