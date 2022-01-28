@@ -1,51 +1,48 @@
-# ReadMe Generator
 
-## Description
+# Readme_Generator
 
-    This is a commandline application that generate a ReadMe.md file with user input
+## Description 
+This is a command line application that helps developer to generate a professional readme using Node from the command line.
 
 ## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Tests](#tests)
-- [License](#license)
-- [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Snapshot](#snapshot)
+* [License](#license)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 ## Installation
+Instructions for Installation:
+Instructions for Installation: To install this application follow the GitHub link and clone the project to your local machine and open on your command line after installing Node.js.
 
-    Instructions for Installation:
-    1. follow the github link and clone to your local machine. 2. install node.js on your machine and open the clone file. 3. in the root folder install inquirer by runing npm install on the commandline.
+## Usage 
+To use in the root dir install inquirer package by using -npm install inquirer command. Then application can be launched by runnig node.js in the command line.
 
-## Usage
-
-    For instraction please watch the video.
+## Snapshot
+![project screenshot](../assets/images/screenshot.png)
 
 ## License
 
-The project is licensed under MIT.
+  The project is licensed under MIT.
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg) 
 
 [More Info](https://choosealicense.com/licenses/)
 
 ## Contributing
-
-    if you like to contribute to this project please follow The [Contributor Covenant](https://www.contributor-covenant.org/)
+If you like to contribut for this project please follow The Contributor Convenant guidelines.
 
 ## Tests
 
-This project include following test.
-jest
 
 ## Questions
-
 Please don't hesitate to reach out to us if you have any questions.
 
 Yohans Getaneh
 
-[GitHub](https://github.com/yohans14)
+GitHub: https://github.com/NaN
 
-[Email](yohans14@yahoo.com)
-
+Email: yohans14@yahoo.com
+    

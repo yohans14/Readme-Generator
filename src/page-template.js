@@ -40,7 +40,7 @@ module.exports = (readmeData) => {
 # ${readmeData.title}
 
 ## Description 
-    ${readmeData.description}
+${readmeData.description}
 
 ## Table of Contents
 * [Installation](#installation)
@@ -52,31 +52,39 @@ module.exports = (readmeData) => {
 * [Questions](#questions)
 
 ## Installation
-    Instructions for Installation:
-    ${readmeData.installation}
+Instructions for Installation:
+${readmeData.installation}
 
 ## Usage 
-    ${readmeData.usage}
+${readmeData.usage}
 
 ## Snapshot
-  ![alt text](assets/images/screenshot.png)
+![project screenshot](../assets/images/screenshot.png)
+
+Video
+
+![project Video](../assets/images/Readme-Generator.mov)
+
 ## License
-    ${renderLicenseSection(readmeData.license)}
+${renderLicenseSection(readmeData.license)}
 
-    ${renderLicenseBadge(readmeData.license)} 
+${renderLicenseBadge(readmeData.license)} 
 
-    ${renderLicenseLink(readmeData.license)}
+${renderLicenseLink(readmeData.license)}
 
 ## Contributing
-    ${readmeData.contributing}
+${readmeData.contributing}
 
 ## Tests
-    ${generateTest(readmeData.test)}
+${generateTest(readmeData.test)}
 
 ## Questions
-    Please don't hesitate to reach out to us if you have any questions.
-      ${readmeData.name}
-      ${"[GitHub]"("https://github.com/" + readmeData.github)}
-      ${"[Email]" + readmeData.email}
+Please don't hesitate to reach out to us if you have any questions.
+
+${readmeData.name}
+
+${"GitHub: " + ("https://github.com/" + readmeData.github)}
+
+${"Email: " + readmeData.email}
     `;
 };

@@ -1,24 +1,56 @@
 # Readme-Generator
 
-[How to create a Professional README](./readme-guide.md)
+## Description
 
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+This is a command line application that helps developer to generate a professional readme using Node from the command line.
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Snapshot](#snapshot)
+- [License](#license)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+
+Instructions for Installation:
+To install this application follow the GitHub link and clone the project to your local machine and open on your command line after installing Node.js.
+
+## Usage
+
+To use in the root dir install inquirer package by using -npm install inquirer command. Then application can be launched by runnig node.js in the command line.
+
+## Snapshot
+
+![project screenshot](./assets/images/screenshot.png)
+
+Video
+
+![project Video](./assets/images/Readme-Generator.mov)
+
+## License
+
+The project is licensed under MIT.
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+[More Info](https://choosealicense.com/licenses/)
+
+## Contributing
+
+If you like to contribut for this project please follow The Contributor Convenant guidelines.
+
+## Tests
+
+## Questions
+
+Please don't hesitate to reach out to us if you have any questions.
+
+Yohans Getaneh
+
+GitHub: https://github.com/yohans14
+
+Email: yohans14@yahoo.com
