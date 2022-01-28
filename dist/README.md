@@ -1,5 +1,5 @@
 
-# Readme_Generator
+# Readme-Generator
 
 ## Description 
 This is a command line application that helps developer to generate a professional readme using Node from the command line.
@@ -23,6 +23,10 @@ To use in the root dir install inquirer package by using -npm install inquirer c
 ## Snapshot
 ![project screenshot](../assets/images/screenshot.png)
 
+Video
+
+![project Video](../assets/images/Readme-Generator.mov)
+
 ## License
 
   The project is licensed under MIT.
@@ -42,7 +46,7 @@ Please don't hesitate to reach out to us if you have any questions.
 
 Yohans Getaneh
 
-GitHub: https://github.com/NaN
+GitHub: https://github.com/yohans14
 
 Email: yohans14@yahoo.com
     

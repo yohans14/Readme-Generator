@@ -27,9 +27,7 @@ To use in the root dir install inquirer package by using -npm install inquirer c
 
 ![project screenshot](./assets/images/screenshot.png)
 
-Video
-
-![project Video](./assets/images/Readme-Generator.mov)
+[Video](https://watch.screencastify.com/v/nefc7AK0lZsICz7Eb8aN)
 
 ## License
 
